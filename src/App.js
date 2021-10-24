@@ -1,15 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/header';
+import PriceList from './components/price-list';
+import Contacts from './components/contacts';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Connection Beats
-        </p>
-      </header>
+    <div className="app">
+      <Header />
+      <Contacts />
+      <PriceList />
     </div>
   );
 }
