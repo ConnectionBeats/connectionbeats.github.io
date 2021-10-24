@@ -1,9 +1,67 @@
 .contacts {
-  padding: 48px 0;
+  padding: 64px 0;
 
   &__heading {
-    font: 32px/48px Yananeska;
     text-align: center;
     padding: 0 16px;
+    opacity: 0.25;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__blocks {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__block {
+    padding: 32px;
+
+    h5 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    a {
+      display: block;
+      color: #fff;
+      opacity: 0.25;
+      text-decoration: none;
+
+      &:hover {
+        opacity: 1;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__info {
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contacts {
+    padding: 64px 16px;
+
+    &__blocks {
+      flex-direction: column;
+    }
+
+    &__block {
+      padding: 32px 0 0;
+
+      &:last-child {
+        padding-bottom: 32px;
+      }
+    }
+
+    &__info {
+      max-width: none;
+      text-align: left;
+    }
   }
 }

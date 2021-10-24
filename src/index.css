@@ -1,5 +1,5 @@
 html {
-  background: #000;
+  background: #222;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #fff;
-  background: url('./assets/images/background.jpg');
+  /* background: url('./assets/images/background.jpg'); */
   background-size: cover;
   background-position: center;
   min-height: 100vh;

@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <Contacts />
       <PriceList />
+      <Contacts />
     </div>
   );
 }

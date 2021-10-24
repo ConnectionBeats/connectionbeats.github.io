@@ -27,7 +27,7 @@ function PriceList() {
         }
       },
       {
-        breakpoint: 1080,
+        breakpoint: 1100,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -36,7 +36,7 @@ function PriceList() {
         }
       },
       {
-        breakpoint: 820,
+        breakpoint: 850,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -45,7 +45,7 @@ function PriceList() {
         }
       },
       {
-        breakpoint: 580,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -136,8 +136,8 @@ function PriceList() {
   ];
 
   return (
-    <header className="price-list">
-      <h2 className="price-list__heading">licensing info</h2>
+    <div className="price-list">
+      <h2 className="price-list__heading">Licensing Info</h2>
       <div className="price-list__slider-holder">
         <Slider className="price-list__slider" { ...settings }>
           { licenses.map((license, licenseIndex) => {
@@ -164,7 +164,7 @@ function PriceList() {
           }) }
         </Slider>
       </div>
-    </header>
+    </div>
   );
 }
 

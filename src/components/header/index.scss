@@ -1,15 +1,18 @@
 .header {
   padding: 64px 16px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   &__heading {
     text-align: center;
     font: 48px/64px Yananeska;
     margin: 0;
-    color: #FD2644;
+    color: #fff;
     position: relative;
     z-index: 1;
+    pointer-events: none;
+    user-select: none;
 
     &::before {
       content: "Connection Beats";
@@ -19,6 +22,33 @@
       width: 100%;
       color: #fff;
       z-index: -1;
+      opacity: 0.25;
+    }
+  }
+
+  &__socials {
+    a {
+      margin-right: 16px;
+      color: #fff;
+      text-decoration: none;
+      opacity: 0.25;
+
+      &:hover {
+        text-decoration: underline;
+        opacity: 1;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .header {
+    &__heading {
+      font-size: 32px;
     }
   }
 }
