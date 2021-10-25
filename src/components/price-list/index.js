@@ -145,7 +145,7 @@ function PriceList() {
               <div className="price-list__card" key={ licenseIndex }>
                 <span className="price-list__name">{ license.name }</span>
                 <h4 className="price-list__price">${ license.price }</h4>
-                <span className="price-list__items">[{ license.items }]</span>
+                <span className="price-list__items">{ license.items }</span>
                 <ul className="price-list__terms">
                   { license.terms.map((term, termIndex) => {
                     if (term == "-") {

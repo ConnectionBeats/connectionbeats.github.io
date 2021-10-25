@@ -8,15 +8,16 @@ function Contacts() {
         <div className="contacts__block">
           <h5>Instagram</h5>
           <span>@prod.connection</span>
-          <a href="https://instagram.com/prod.connection">Open</a>
+          <a target="_blank" href="https://instagram.com/prod.connection">Open</a>
         </div>
         <div className="contacts__block">
           <h5>Email</h5>
           <span>prodconnectionbeats@gmail.com</span>
-          <a href="mailto:prodconnectionbeats@gmail.com">Open</a>
+          <a target="_blank" href="mailto:prodconnectionbeats@gmail.com">Open</a>
         </div>
       </div>
       <span className="contacts__info">Text me on Instagram/Email if you have any questions about Lease, Exclusive Rights, or Free Downloads</span>
+      <span className="contacts__info">Open to any Collaborations</span>
     </div>
   );
 }

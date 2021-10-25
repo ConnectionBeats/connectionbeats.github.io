@@ -1,3 +1,17 @@
+@import "../../assets/scss/variables.scss";
+
+@keyframes mount-heading {
+  from {
+    transform: translateY(-16px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .header {
   padding: 64px 16px;
   display: flex;
@@ -13,6 +27,8 @@
     z-index: 1;
     pointer-events: none;
     user-select: none;
+    animation-name: mount-heading;
+    animation-duration: 0.5s;
 
     &::before {
       content: "Connection Beats";
@@ -22,16 +38,18 @@
       width: 100%;
       color: #fff;
       z-index: -1;
-      opacity: 0.25;
+      opacity: $sub-opacity;
     }
   }
 
   &__socials {
+    margin-top: 8px;
+    
     a {
       margin-right: 16px;
       color: #fff;
       text-decoration: none;
-      opacity: 0.25;
+      opacity: $sub-opacity;
 
       &:hover {
         text-decoration: underline;
