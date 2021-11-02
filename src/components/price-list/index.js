@@ -77,7 +77,7 @@ function PriceList() {
     {
       name: "Standard Lease",
       price: 39.99,
-      items: "WAV + MP3",
+      items: "Untagged WAV",
       terms: [
         "Sell up to 10,000 units",
         "500,000 Online Audio Streams",
@@ -93,7 +93,7 @@ function PriceList() {
     {
       name: "Premium Lease",
       price: 69.99,
-      items: "Trackouts + WAV + MP3",
+      items: "Trackouts + WAV",
       terms: [
         "Unlimited Distribution",
         "-",
@@ -108,7 +108,7 @@ function PriceList() {
     {
       name: "Unlimited Lease",
       price: 99.99,
-      items: "Trackouts + WAV + MP3",
+      items: "Trackouts + WAV",
       terms: [
         "Unlimited Distribution",
         "-",
@@ -122,7 +122,7 @@ function PriceList() {
     {
       name: "Exclusive",
       price: 499.99,
-      items: "Trackouts + WAV + MP3",
+      items: "Trackouts + WAV",
       terms: [
         "Unlimited Distribution",
         "-",
@@ -148,7 +148,7 @@ function PriceList() {
                 <span className="price-list__items">{ license.items }</span>
                 <ul className="price-list__terms">
                   { license.terms.map((term, termIndex) => {
-                    if (term == "-") {
+                    if (term === "-") {
                       return (
                         <li className="price-list__term price-list__term--separator" key={ termIndex }></li>
                       );

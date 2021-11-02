@@ -1,0 +1,14 @@
+@import "./variables.scss";
+
+::-webkit-scrollbar {
+  width: 4px;
+  background: #222;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $sub-color;
+
+  &:hover {
+    background: #fff;
+  }
+}
